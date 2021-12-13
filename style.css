@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+/*--------------- HEADER ----------------*/
+header{
+    position: fixed;
+    background-color: darkblue;
+    width: 100%;
+}
+
+.header-container{
+    margin: auto;
+    max-width: 1700px;
+    padding: .5rem;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 0 1.8rem;
+}
+
+h1{
+    display: inline;
+}
+
+nav{
+    float: right;
+    margin: 9px;
+}
+
+header li{
+    display: inline;
+    list-style: none;
+}
