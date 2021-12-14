@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nombre de la página</title>
+    <title>ElectronicAaps</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/resources/Images/carro-de-la-compra.png">
 </head>
+
 <body>
     
+    <!-- Music -->
+    <!-- <embed src="./resources/Music/Fly Away.mp3" type="audio/mpeg" autostarty="true" loop="true" width="0" height="0" volume="20"> -->
+
     <header>
         
         <div class="header-container">
 
-            <h1><a href="index.html">De que se trata la página</a></h1>
+            <h1><a href="index.html">Tienda de componentes electrónicos</a></h1>
     
             <nav>
-                <ul>
+                <ul>                    
+
+                    <li><a href="#Presentation">Inicio</a></li>
+                    <li><a href="#About">Sobre nostros</a></li>
+                    <li><a href="#Menu">Componentes</a></li>
+                    
+                    <div class="shopping-cart" id="shopping-cart">
+
+                        <li><a href="#Shopping-cart" >Carrito</a></li>
+                        <li><img src="/resources/Images/carro-de-la-compra.png" alt=""></li>
+                        
+                    </div>
+                    
+                    <div class="container-login">
+
+                        <li><a href="#">Login:</a></li>
     
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Componentes</a></li>
-                    <li><a href="#">Carrito</a></li>
-    
+                        <label for="user" class="login-control">User</label>
+                        <input type="nickname" name="user" id="user" placeholder="Entry your username" required>
+                        <label for="passwork" class="login-control">Passwork</label>
+                        <input type="password" name="passwork" id="passwork" placeholder="Entry your passwork" required>
+                        <input type="button" value="LOGIN">
+        
+                    </div>
                 </ul>
             </nav>
     
@@ -32,99 +54,199 @@
 
     <section class="Presentation" id="Presentation">
 
-        <div class="video-of-presentation">
+        <div class="presentation-video">
+
             <video src="./resources/Videos/stock-footage-artificial-intelligence-concept-electronic-brain-powered-by-processor-integrated-circuits-come-to.webm" autoplay muted loop></video>
+            
         </div>
 
-        <h2>Título llamativo</h2>
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, dolorum!</p>
+        <div class="dark-overlay">
+
+            <div class="presentation-container">
+                
+                <h2>La electrónica al alcance de tu mano</h2>
+                
+                <p>Ahorra tiempo. Ahorra dinero</p>
+
+            </div>
+
+        </div>
 
     </section>
 
     <section class="About" id="About">
 
-        <div>
-            <!-- Images -->
-        </div>
+        <div class="about-container left" id="about-img1"></div>
 
-        <div>
-            <h2>Título about</h2>
+        <div class="about-container right about-content">
+            <h2 class="about-title">Título about</h2>
             <p>sobre que hacemos</p>
         </div>
 
-        <div>
-            <!-- Images -->
-        </div>
+        <div class="about-container right" id="about-img2"></div>
 
-        <div>
-            <h2>Historía o misión</h2>
-            <p>Frase motivacional :v Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos ratione quae perferendis ullam corporis et aperiam pariatur veniam animi.</p>
+        <div class="about-container left about-content">
+            <h2 class="about-title">Historía o misión</h2>
+            <p>Frase motivacional Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dignissimos ratione quae perferendis ullam corporis et aperiam pariatur veniam animi.</p>
         </div>
 
     </section>
 
     <section class="Menu" id="Menu">
 
-        <h2>Nuestros productos</h2>
-        <ul>
-            <li><!--Images-->
-                <div>Articulos</div>
-                <div>Precios</div>
-            </li>
-            <li><!--Images-->
-                <div>Articulos</div>
-                <div>Precios</div>
-            </li>
-            <li><!--Images-->
-                <div>Articulos</div>
-                <div>Precios</div>
-            </li>
-            <li><!--Images-->
-                <div>Articulos</div>
-                <div>Precios</div>
-            </li>
-            <li><!--Images-->
-                <div>Articulos</div>
-                <div>Precios</div>
-            </li>
-            <!-- ...Or more -->
+        <div class="dark-overlay">
 
-        </ul>
+            <div class="menu-inner">
+            
+                <h2 class="menu-title">Nuestros productos</h2>
+                <ul>
+                    <li><!--Images-->
+                        <div>Articulos</div>
+                        <div>Precios</div>
+                    </li>
+                    <li><!--Images-->
+                        <div>Articulos</div>
+                        <div>Precios</div>
+                    </li>
+                    <li><!--Images-->
+                        <div>Articulos</div>
+                        <div>Precios</div>
+                    </li>
+                    <li><!--Images-->
+                        <div>Articulos</div>
+                        <div>Precios</div>
+                    </li>
+                    <li><!--Images-->
+                        <div>Articulos</div>
+                        <div>Precios</div>
+                    </li>
+                    <!-- ...Or more -->
+        
+                </ul>
+                
+            </div>
+            
+        </div>
 
     </section>
 
     <section class="Shopping-cart" id="Shopping-cart">
 
-        <h2>Formulario de compras</h2>
-        <form action="#">
+        <div class="shopping-content">
+    
+            <h2>Formulario de compras</h2>
 
-            <label for="">Fecha:</label>
-            <input type="date" name="" id="">
+            <form id="add-cart">  
 
-            <label for="">Nombres y apellidos:</label>
-            <input type="text" name="" id="">
+                <div class="form-center">
 
-            <label for="">Fecha:</label>
-            <input type="time" name="" id="">
+                    <div class="form-left">
 
-            <label for="">E-mail:</label>
-            <input type="email" name="" id="">
+                        <label for="comp">Componente:</label>
+                        <input type="text" name="" id="comp">
             
-            <label for="">Cantidad de pedidos:</label>
-            <input type="number" name="" id="">
+                    </div>
+                    
+                    <div class="form-right">
 
-            <label for="">Cantidad de pedidos:</label>
-            <input type="text" name="" id="">
+                        <label for="value">Valor del componente:</label>
+                        <input type="number" name="" id="value">
 
-            <label for="">Comentarios</label>
-            <textarea name="" id="" cols="30" rows="5"></textarea>
+                        <label for="amount">Cantidad:</label>
+                        <input type="number" name="" id="amount">
 
-            <input type="submit" value="BUY">
+                    </div>
+    
+                    <input type="submit" value="ADD TO CART" onclick="addCart()">
+                    
+                    <div class="shopping-list">
+                        <label id="">lista de Compra:</label>             
+                        <label id="list-1"></label>             
+                        <label id="list-2"></label>             
+                        <label id="list-3"></label>             
+                    </div>
+                    
+                </div>
+    
+                <label for="">Comentarios</label>
+                <textarea name="" id="" cols="120" rows="5"></textarea>
+    
+                <input type="submit" value="BUY">
+                
+            </form>
 
-        </form>
+        </div>
+            
+    </section>
+
+    <section>
+
+        <script type="text/javascript">
+
+            function obtenerDatos(){
+                comp = document.getElementById("comp").value;
+                value = document.getElementById("value").value;
+                amount = document.getElementById("amount").value;
+
+                var r = [comp, value, amount];
+                document.getElementById('list-1').innerHTML = r[0];
+                document.getElementById('list-2').innerHTML = r[1];
+                document.getElementById('list-3').innerHTML = r[2];
+                return r;                
+            }
+
+            function addCart(){
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200){
+                        var respuesta = JSON.parse(xhttp.responseText);
+                        var productos = respuesta.productos;
+                        var r = obtenerDatos();
+
+                        productos.push({componente:r[0],valor:parseFloat(r[1])});
+                        console.log(productos);
+                        
+                        var productos_string = JSON.stringify(productos);
+                        var fs = require('fs');
+                        fs.writeFile("thing.json", productos_string, function(err, result) {
+                        if(err) console.log('error', err);
+                        });
+                    }
+                };
+                xhttp.open("GET", "productos.json", true);
+                xhttp.send();
+            };
+
+            var input = document.getElementsByTagName("input");
+            for (i=0; i<input.length; i++) {
+                input[i].addEventListener("change", function(){
+                resultados = obtenerDatos();
+                console.log(resultados);                
+                });
+            };
+            
+        </script>
 
     </section>
+
+    <section class="map-container" id="map-container">
+
+        <div class="maps-container" id="maps-container">
+    
+            <h1>Location</h1>
+            <h2>Cra. 16 # 127 b 45</h2>
+            <hr>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31810.348700180864!2d-74.05189129391407!3d4.71898041656026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f854da87b5633%3A0x806f4e18fa33809d!2sCra.%2016%20%23127b-45%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1639449378523!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <input type="button" id="hide-map" value="HIDE MAP" onclick="javascript:document.getElementById('map-container').style.display='none';void 0">
+    
+        </div>
+
+    </section>
+
+    <footer>
+        <p>ElectronicAaps &copy;. Todos los derechos reservados. Teléfono: 1455 14 21. Dirección: <a href="javascript:document.getElementById('map-container').style.display='inline';void 0">Cra. 16 # 127 b 45</a></p>
+    </footer>
 
 </body>
 </html>

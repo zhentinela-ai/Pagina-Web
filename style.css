@@ -4,7 +4,16 @@
     margin: 0;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 /*--------------- HEADER ----------------*/
+
 header{
     position: fixed;
     background-color: darkblue;
@@ -23,6 +32,39 @@ header a{
     padding: 0 1.8rem;
 }
 
+/* SHOPING CART */
+
+header img{
+    height: 25px;
+    width: 25px;
+}
+
+.shopping-cart{
+    padding: 0 5px;
+    margin: auto;
+    float: right;
+}
+
+.shopping-cart img{
+    float: right;
+}
+
+/* SHOPING CART */
+
+/* LOGIN */
+.container-login{ 
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+}
+
+.login-control{
+    color: white;
+    font-size: 16px;
+}
+
+/* LOGIN */
+
 h1{
     display: inline;
 }
@@ -36,3 +78,194 @@ header li{
     display: inline;
     list-style: none;
 }
+
+
+/* ----------------- PRESENTATION ------------------ */
+
+.Presentation{
+    height: 720px;
+    font-size: 25px; 
+}
+
+.presentation-video{
+    height: 720px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.presentation-video video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.dark-overlay{
+    background-color: rgba(255, 255, 255, .5);
+    width: 100%;
+    height: 100%;
+}
+
+.presentation-container {
+    color: white;
+    text-align: center;
+    padding: 285px 0;
+    margin: auto;
+}
+
+/* ------------- ABOUT -------------------- */
+
+.About{
+    height: 1000px;
+    font-size: 18px;
+}
+
+.about-container{
+    width: 50%;
+    height: 50%;
+}
+
+.about-content{
+    text-align: justify;
+    padding: 130px 30px;
+}
+
+.about-title{
+    margin: 2rem;
+    text-align: center;
+}
+
+#about-img1{
+    background: url(./resources/Images/componentes-electronicos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about-img2{
+    background: url(./resources/Images/Componentes.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ---------------- MENU -------------------- */
+
+.Menu{
+    clear: both;
+    font-size: center;
+    text-align: center;
+    background: url(./resources/Images/78422051-3d-ilustración-de-una-ciudad-electrónica.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-inner{
+    padding: 3rem;
+    color: white;
+}
+
+.menu-title{
+    margin: 2rem;
+}
+
+.Menu ul{
+    padding: 0;
+}
+
+.Menu ul li{
+    list-style: none;
+    padding: 2rem;
+}
+
+.Menu ul li div{
+    display: inline;
+    padding: 4rem;
+} 
+
+/* ------------------ SHOPPING CART ------------------- */
+
+.Shopping-cart{
+    padding: 1.2rem;
+    height: 200;
+    text-align: center;
+}
+
+.form-center{
+    display: block;
+}
+
+.form-left{
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    float: left;
+}
+
+.form-right{
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    float: right;
+}
+
+.Shopping-cart label{
+    display: block;
+    padding: 5px 0;
+}
+
+.shopping-list{
+    padding: 0;
+}
+
+input[type="text"], input[type="time"], input[type="date"], input[type="email"], input[type="number"]{
+    width: 12rem;
+}
+
+textarea{
+    padding: 2rem;
+}
+
+input[type="submit"]{
+    font-size: 16px;
+    margin: 1rem;
+    height: 2rem;
+    width: 8rem;
+    display: block;
+    margin: auto;
+}
+
+/* ---------------- MAPS ------------------ */
+
+.map-container{
+    display: none;
+}
+
+.maps-container iframe{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.maps-container input{
+    font-size: 16px;
+    margin: 1rem;
+    height: 2rem;
+    width: 8rem;
+    display: block;
+    margin: auto;
+}
+
+/* ---------------- FOOTER --------------- */
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 2rempx;
+    padding: 1rem;
+}
+
